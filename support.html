@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support — Route One</title>
+<style>
+  :root {
+    --cream: #F7F1E1;
+    --ink: #221F1A;
+    --yellow: #F4C542;
+    --pink: #F4A4B8;
+    --pink-deep: #E8607F;
+    --line: rgba(34,31,26,0.12);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Familjen Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 48px;
+  }
+  .crest { width: 36px; height: 36px; flex-shrink: 0; }
+  .wordmark {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: -0.01em;
+  }
+  .eyebrow {
+    display: inline-block;
+    font-family: 'Spline Sans Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--pink-deep);
+    background: rgba(244,164,184,0.28);
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-bottom: 18px;
+  }
+  h1 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 1.1;
+    letter-spacing: -0.015em;
+    margin: 0 0 8px;
+  }
+  .lede {
+    font-size: 19px;
+    font-weight: 500;
+    border-left: 3px solid var(--yellow);
+    padding-left: 18px;
+    margin: 32px 0 40px;
+  }
+  h2 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+    margin: 36px 0 12px;
+  }
+  p { margin: 0 0 16px; font-size: 16px; }
+  .faq {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 4px 22px;
+    margin-bottom: 12px;
+  }
+  .faq-item {
+    padding: 18px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .faq-item:last-child { border-bottom: none; }
+  .faq-q {
+    font-weight: 700;
+    font-size: 15.5px;
+    margin: 0 0 6px;
+  }
+  .faq-a {
+    font-size: 15px;
+    margin: 0;
+    color: rgba(34,31,26,0.85);
+  }
+  .divider { border: none; border-top: 1px solid var(--line); margin: 48px 0; }
+  .contact {
+    background: var(--pink);
+    border-radius: 10px;
+    padding: 22px 24px;
+  }
+  .contact p { margin: 0 0 4px; font-size: 15px; color: var(--ink); }
+  .contact a {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--ink);
+  }
+  a { color: var(--pink-deep); text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 2px; }
+  footer {
+    margin-top: 64px;
+    font-family: 'Spline Sans Mono', monospace;
+    font-size: 12px;
+    color: rgba(34,31,26,0.5);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <svg class="crest" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M24 4L40 10V22C40 32 33 40.5 24 44C15 40.5 8 32 8 22V10L24 4Z" fill="#F4C542" stroke="#221F1A" stroke-width="2"/>
+      <circle cx="24" cy="21" r="7" fill="#F7F1E1" stroke="#221F1A" stroke-width="2"/>
+      <path d="M17 21L31 21M24 14L24 28" stroke="#221F1A" stroke-width="1.5"/>
+    </svg>
+    <span class="wordmark">Route One</span>
+  </header>
+
+  <span class="eyebrow">Support</span>
+  <h1>Need a hand?</h1>
+  <p class="lede">Route One is a one-person project, so support runs through email — but that also means a real reply, not a ticket queue.</p>
+
+  <h2>Common questions</h2>
+  <div class="faq">
+    <div class="faq-item">
+      <p class="faq-q">How does scoring work?</p>
+      <p class="faq-a">Each route starts at full points. Every hint you reveal — nationality, position, a club name — costs points. Guess correctly before you run out of hints for the highest score on that player.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Why don't I recognise a club crest?</p>
+      <p class="faq-a">Crests in Route One are procedurally generated rather than official club badges, so the shapes and colours are inspired by the club's identity but won't match the real thing exactly.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Where does the career data come from?</p>
+      <p class="faq-a">Every route is sourced from English Wikipedia. If you spot an error in a player's career — a missing club, wrong dates, anything — flag it and it'll get corrected.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Does Route One need an internet connection?</p>
+      <p class="faq-a">No. The whole app, including the map and all player data, is bundled on your device. It works fully offline.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Is there a way to sync progress across devices?</p>
+      <p class="faq-a">Not currently — progress is stored locally on each device. It's something being considered for a future update.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <h2>Still stuck?</h2>
+  <div class="contact">
+    <p>Email directly and you'll hear back from a real person:</p>
+    <a href="mailto:hello@routeoneapp.com">hello@routeoneapp.com</a>
+  </div>
+
+  <footer>© 2026 SJ Harcombe · routeoneapp.com</footer>
+</div>
+</body>
+</html>
